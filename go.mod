@@ -16,6 +16,7 @@ require (
 
 require (
 	github.com/google/subcommands v1.0.1 // indirect
+	github.com/gorilla/mux v1.8.0
 	github.com/lib/pq v1.10.6
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/semichkin-gopkg/uuid v0.0.1

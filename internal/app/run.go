@@ -2,7 +2,7 @@ package app
 
 import (
 	"database/sql"
-	"net/http"
+	"wire-di/internal/app/server"
 	"wire-di/internal/user"
 
 	_ "github.com/lib/pq"
@@ -16,6 +16,6 @@ func Run() {
 	defer db.Close()
 
 	userHandler := user.Wire(db)
-	http.Handle("/user", userHandler.FetchByUsername())
-	http.ListenAndServe(":8000", nil)
+
+	server.CreateUserHttpServer("8080", userHandler)
 }
