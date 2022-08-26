@@ -3,7 +3,7 @@ package app
 import (
 	"database/sql"
 	"wire-di/internal/app/server"
-	"wire-di/internal/user"
+	"wire-di/internal/domain/user"
 
 	_ "github.com/lib/pq"
 )
